@@ -1,0 +1,321 @@
+a {
+    color: white; 
+    font-family: 'Arial Black', Arial, sans-serif; 
+    text-align: center;
+    align-items: center;
+
+}
+
+header {
+    background-color:#464646;   
+    font-family: Impact;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+            flex-direction: column;
+            align-items: center; 
+    }
+
+.navbar {
+    display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+h1 {
+    color: black; 
+    font-family: kdamThmorPro
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Cambia el valor de justify-content */
+    align-items: center; /* Añade esta propiedad para centrar verticalmente */
+    flex-direction: row; /* Añade esta propiedad para alinear horizontalmente */
+}
+
+.busqueda {
+    display: flex;
+    justify-content: flex-end; /* Mueve los elementos al extremo derecho */
+    align-items: center; /* Centra verticalmente */
+    padding-left: 80px;;
+}
+
+.busqueda input[type="text"] {
+    padding: 5px;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.busqueda button {
+    padding: 8px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos <a> */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px; /* Espacio entre los elementos <a> */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+
+.container{
+    display: flex;
+}
+
+/* REMERA 1 */
+.imagenes-container {
+    display: flex; /* Crear una fila de elementos */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    gap: 20px; /* Espacio entre las imágenes */
+    transition: 0.3s;
+}
+
+/* Estilos para las imágenes */
+.imagenes-container img {
+    width: 400px;
+    padding: 30px;
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+
+.imagenes-container:hover img {
+filter: brightness(1);
+}
+
+.imagenes-container:hover .overlay {
+opacity: 0;
+}
+
+.imagenes-container p {
+color: #ccc;
+font-size: 35px;
+}
+
+
+/* REMERA 2 */
+.imagenes-container2 img {
+    width: 400px;
+    padding: 30px;
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+
+.imagenes-container2:hover img {
+filter: brightness(1);
+}
+
+.imagenes-container2:hover .overlay {
+opacity: 0;
+}
+
+.imagenes-container2 p {
+color: #ccc;
+font-size: 35px;
+}
+
+
+
+/* REMERA 3 */
+.imagenes-container3 img {
+    width: 400px;
+    padding: 30px;
+    filter: brightness(0.5);
+    transition: 0.3s;
+}
+
+.imagenes-container3:hover img {
+filter: brightness(1);
+}
+
+.imagenes-container3:hover .overlay {
+opacity: 0;
+}
+
+.imagenes-container3 p {
+color: #ccc;
+font-size: 35px;
+}
+
+h2 {color: white; 
+    font-family: Akira expanded super Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 
+
+    
+
+}
+
+h3{
+    color: white; 
+    font-family: 'Arial Black', Arial, sans-serif; 
+    text-align: left;
+    align-items:flex-start}
+    
+
+p{ color: white;
+    font-family:'Times New Roman', Times, serif
+
+
+}
+
+
+
+.contacto-container {
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.contacto-container h2 {
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    color: white;   
+}
+
+.contacto-container p {
+    font-size: 16px; /* Tamaño de fuente personalizado */
+    margin: 3px 0; /* Espacio entre los párrafos */
+    color: white
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    header {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .busqueda {
+        justify-content: center;
+        padding-left: 5;
+    }
+
+    .busqueda input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .busqueda button {
+        margin-left: 0;
+    }
+
+    .imagenes-container img,
+    .imagenes-container2 img,
+    .imagenes-container3 img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2,
+    h3,
+    p {
+        text-align: center;
+    }
+
+    .contacto-container,
+    .formulario-contacto {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .imagenes-container,
+    .imagenes-container2,
+    .imagenes-container3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imagenes-container,
+    .imagenes-container2,
+    .imagenes-container3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .imagenes-container,
+    .imagenes-container2,
+    .imagenes-container3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imagenes-container,
+    .imagenes-container2,
+    .imagenes-container3 {
+      margin-bottom: 20px;
+    }
+  }
